@@ -51,7 +51,7 @@ r,,WaterPressure,water pressure,,,,3900,,,pressv,,,water pressure
 #r,,xUnknown3C,(constant 0),,,,3C00,,,onoff,,,
 #r;w,,SolarYieldTotal,total solar yield,,,,3D00,,,energy4,,,solar yield total
 #r;w,,YieldTotal,total environmental yield,,,,3E00,,,energy4,,,envrionment yield total
-r;w,,ESCOBlockFunction,,,,,4500,,,escomode,,,Function to deactivate when Energy Supply Company sends a blocking signal
+#r;w,,ESCOBlockFunction,,,,,4500,,,escomode,,,Function to deactivate when Energy Supply Company sends a blocking signal
 r;w,,HwcMaxFlowTempDesired,hwc max flow temp desired,,,,4600,,,tempv,,,maximum flow temperature setpoint of Hwc
 #r,,xUnknown47,(constant off),,,,4700,,,onoff,,,
 #r,,xUnknown48,"(constant 1, 0 in standby, 2 in cooling)",,,,4800,,,UIN,,,0100 before SWW run/0300 during SWW run
@@ -98,11 +98,11 @@ r,,DisplayedOutsideTemp,outside temperature,,,,7300,,,tempv,,,outside temperatur
 #r,,xUnknown8D,(constant 0),,,,8D00,,,SIN,,,
 #r,,xUnknown8E,(constant 0),,,,8E00,,,SIN,,,
 #r,,xUnknown8F,(constant 0),,,,8F00,,,SIN,,,
-r;w,,OutsideTempAvg,average outside temperature,,,,9500,,,tempv,,,rounded average outsidetemperature (updated every 3h)
-r,,MaintenanceDue,maintenance due,,,,9600,,,yesno,,,shows whether maintenance is due
+r,,OutsideTempAvg,average outside temperature,,,,9500,,,tempv,,,rounded average outsidetemperature (updated every 3h)
+#r,,MaintenanceDue,maintenance due,,,,9600,,,yesno,,,shows whether maintenance is due
 #r,,xUnknown97,(constant off),,,,9700,,,onoff,,,
 #r,,xUnknown98,(constant off),,,,9800,,,onoff,,,
-r,,GreenIQ,,,,,9A00,,,onoff,,,Green IQ mode on thermostat
+#r,,GreenIQ,,,,,9A00,,,onoff,,,Green IQ mode on thermostat
 #r,,xUnknown9B,(constant off),,,,9B00,,,onoff,,,
 #r,,HwcStorageTempTop,hwc storage temperature top,,,,9D00,,,tempv,,,temperature sensor HWC storage top
 #r,,HwcStorageTempBottom, storage temperature bottom,,,,9E00,,,tempv,,,temperature sensor HWC storage bottom
@@ -236,7 +236,7 @@ r;w,,Hc1RoomTempMod,,,,,1500,,,rcmode2,,,room temperature modulation of Hc1
 #r,,Hc1ExtHeatDemand,,,,,1900,,,onoff,,,indicator of external heat demand for Hc1
 #r,,Hc1MixerPosition,Mixer Position Heating Circuit 1,,,,1A00,,,EXP,,,"status of mixer (<0 closing, >0 opening)"
 r;w,,Hc1Status,Status Heating Circuit 1,,,,1B00,,,UCH,,,status of zone 1
-r,,Hc1HeatCurveAdaption,Adaptive Heatcurve Heating Circuit 1,,,,1C00,,,EXP,,,adaption applied to heating curve of Hc1
+#r,,Hc1HeatCurveAdaption,Adaptive Heatcurve Heating Circuit 1,,,,1C00,,,EXP,,,adaption applied to heating curve of Hc1
 #r;w,,Hc1Unknown1D,(constant off),,,,1D00,,,onoff,,,
 r,,Hc1PumpStatus,PumpStatus Hc1,,,,1E00,,,hcpumpstate,,,pump status of Hc1
 #r;w,,Hc1Unknown1F,(konstant 4),,,,1F00,,,EXP,,,
